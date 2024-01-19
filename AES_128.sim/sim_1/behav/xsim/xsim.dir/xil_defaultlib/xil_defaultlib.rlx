@@ -1,0 +1,24 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sim_1/new/AES_TB.vhd,1704544105,vhdl,,,,aes_tb,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/add_key.vhd,1697529806,vhdl,,,,add_key,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/add_key_CP.vhd,1704546126,vhdl,,,,add_key_cp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/add_key_DP.vhd,1704545939,vhdl,,,,add_key_dp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/key_gen.vhd,1697719331,vhdl,,,,key_gen,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/key_gen_CP.vhd,1705663736,vhdl,,,,key_gen_cp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/key_gen_DP.vhd,1705665090,vhdl,,,,key_gen_dp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mem_key.vhd,1698225384,vhdl,,,,mem_key,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mem_text.vhd,1698225384,vhdl,,,,mem_text,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mixcolumn.vhd,1697532130,vhdl,,,,mixcolumn,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mixcolumn_CP.vhd,1704549193,vhdl,,,,mixcolumn_cp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mixcolumn_DP.vhd,1704551864,vhdl,,,,mixcolumn_dp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/mull.vhd,1704546897,vhdl,,,,mull,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/round_algorithm.vhd,1704720383,vhdl,,,,round_algorithm,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/sbox.vhd,1697483906,vhdl,,,,sbox,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/sbox_4.vhd,1697528253,vhdl,,,,sbox_4,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/shiftrows.vhd,1697529458,vhdl,,,,shiftrows,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/sub_bytes.vhd,1697531644,vhdl,,,,sub_bytes,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/sub_bytes_CP.vhd,1704544933,vhdl,,,,sub_bytes_cp,,,,,,,,
+C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/sources_1/new/sub_bytes_DP.vhd,1697483990,vhdl,,,,sub_bytes_dp,,,,,,,,

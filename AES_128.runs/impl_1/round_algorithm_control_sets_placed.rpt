@@ -1,0 +1,172 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Fri Jan 19 12:56:23 2024
+| Host         : DESKTOP-050FUS6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file round_algorithm_control_sets_placed.rpt
+| Design       : round_algorithm
+| Device       : xa7s100
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    94 |
+|    Minimum number of control sets                        |    94 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    55 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    94 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |    32 |
+| >= 8 to < 10       |    40 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    20 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             384 |          115 |
+| No           | No                    | Yes                    |              39 |           17 |
+| No           | Yes                   | No                     |              32 |           22 |
+| Yes          | No                    | No                     |             586 |          212 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             720 |          246 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                             Enable Signal                            |                               Set/Reset Signal                              | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg0                   |                                                                             |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | sub_bytes_mapping/sub_bytes_CP_mapping/state_addr_reg0               |                                                                             |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul11_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul11_mapiranje/a_reg[7]_i_1__9_n_2  |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul10_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul10_mapiranje/a_reg[7]_i_1__8_n_2  |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul19_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul19_mapiranje/a_reg[7]_i_1__17_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul18_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul18_mapiranje/a_reg[7]_i_1__16_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul17_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul17_mapiranje/a_reg[7]_i_1__15_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul29_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul29_mapiranje/a_reg[7]_i_1__27_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul1_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul1_mapiranje/a_reg[7]_i_1_n_2      |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul2_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul2_mapiranje/a_reg[7]_i_1__0_n_2   |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul28_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul28_mapiranje/a_reg[7]_i_1__26_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul23_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul23_mapiranje/a_reg[7]_i_1__21_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul3_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul3_mapiranje/a_reg[7]_i_1__1_n_2   |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul30_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul30_mapiranje/a_reg[7]_i_1__28_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul27_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul27_mapiranje/a_reg[7]_i_1__25_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul26_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul26_mapiranje/a_reg[7]_i_1__24_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul25_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul25_mapiranje/a_reg[7]_i_1__23_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul13_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul13_mapiranje/a_reg[7]_i_1__11_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul4_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul4_mapiranje/a_reg[7]_i_1__2_n_2   |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul24_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul24_mapiranje/a_reg[7]_i_1__22_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul8_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul8_mapiranje/a_reg[7]_i_1__6_n_2   |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul22_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul22_mapiranje/a_reg[7]_i_1__20_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul21_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul21_mapiranje/a_reg[7]_i_1__19_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul20_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul20_mapiranje/a_reg[7]_i_1__18_n_2 |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul12_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul12_mapiranje/a_reg[7]_i_1__10_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul9_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul9_mapiranje/a_reg[7]_i_1__7_n_2   |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul31_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul31_mapiranje/a_reg[7]_i_1__29_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul6_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul6_mapiranje/a_reg[7]_i_1__4_n_2   |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul7_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul7_mapiranje/a_reg[7]_i_1__5_n_2   |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul5_mapiranje/a_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul5_mapiranje/a_reg[7]_i_1__3_n_2   |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul32_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul32_mapiranje/a_reg[7]_i_1__30_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul14_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul14_mapiranje/a_reg[7]_i_1__12_n_2 |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul15_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul15_mapiranje/a_reg[7]_i_1__13_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul16_mapiranje/a_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul16_mapiranje/a_reg[7]_i_1__14_n_2 |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_10[0]       |                                                                             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/E[0]                              |                                                                             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_5[0]        |                                                                             |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul6_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul6_mapiranje/p_reg[7]_i_1__4_n_2   |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul7_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul7_mapiranje/p_reg[7]_i_1__5_n_2   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul29_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul29_mapiranje/p_reg[7]_i_1__27_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul2_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul2_mapiranje/p_reg[7]_i_1__0_n_2   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul30_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul30_mapiranje/p_reg[7]_i_1__28_n_2 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul32_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul32_mapiranje/p_reg[7]_i_1__30_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul3_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul3_mapiranje/p_reg[7]_i_1__1_n_2   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul4_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul4_mapiranje/p_reg[7]_i_1__2_n_2   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul5_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul5_mapiranje/p_reg[7]_i_1__3_n_2   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul8_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul8_mapiranje/p_reg[7]_i_1__6_n_2   |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul12_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul12_mapiranje/p_reg[7]_i_1__10_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul9_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul9_mapiranje/p_reg[7]_i_1__7_n_2   |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul20_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul20_mapiranje/p_reg[7]_i_1__18_n_2 |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul21_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul21_mapiranje/p_reg[7]_i_1__19_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul22_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul22_mapiranje/p_reg[7]_i_1__20_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul31_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul31_mapiranje/p_reg[7]_i_1__29_n_2 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul23_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul23_mapiranje/p_reg[7]_i_1__21_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul24_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul24_mapiranje/p_reg[7]_i_1__22_n_2 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul25_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul25_mapiranje/p_reg[7]_i_1__23_n_2 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul26_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul26_mapiranje/p_reg[7]_i_1__24_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul27_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul27_mapiranje/p_reg[7]_i_1__25_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul28_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul28_mapiranje/p_reg[7]_i_1__26_n_2 |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul19_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul19_mapiranje/p_reg[7]_i_1__17_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul1_mapiranje/p_next         | mixcolumn_mapping/mixcolumn_DP_mapping/mul1_mapiranje/p_reg[7]_i_1_n_2      |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul17_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul17_mapiranje/p_reg[7]_i_1__15_n_2 |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul18_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul18_mapiranje/p_reg[7]_i_1__16_n_2 |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul10_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul10_mapiranje/p_reg[7]_i_1__8_n_2  |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul11_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul11_mapiranje/p_reg[7]_i_1__9_n_2  |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul13_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul13_mapiranje/p_reg[7]_i_1__11_n_2 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul14_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul14_mapiranje/p_reg[7]_i_1__12_n_2 |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[0]_0[0]        |                                                                             |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul15_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul15_mapiranje/p_reg[7]_i_1__13_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_2[0]        |                                                                             |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[0]_3[0]        |                                                                             |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_DP_mapping/mul16_mapiranje/p_next        | mixcolumn_mapping/mixcolumn_DP_mapping/mul16_mapiranje/p_reg[7]_i_1__14_n_2 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[0]_1[0]        |                                                                             |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[0]_2[0]        |                                                                             |                4 |              9 |         2.25 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_1[0]        |                                                                             |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_8[0]        |                                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_0[0]        |                                                                             |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_3[0]        |                                                                             |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_7[0]        |                                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_6[0]        |                                                                             |               10 |             16 |         1.60 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_4[0]        |                                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/state_addr_reg_reg[1]_9[0]        |                                                                             |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | count_reg0                                                           | count_reg[31]_i_1_n_2                                                       |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG |                                                                      | mixcolumn_mapping/mixcolumn_CP_mapping/FSM_onehot_state_reg_reg[2]_0        |               22 |             32 |         1.45 |
+|  n_0_307_BUFG  |                                                                      |                                                                             |               31 |             32 |         1.03 |
+|  n_1_306_BUFG  |                                                                      |                                                                             |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG |                                                                      | reset_IBUF                                                                  |               17 |             39 |         2.29 |
+|  clk_IBUF_BUFG | sub_bytes_mapping/sub_bytes_CP_mapping/FSM_onehot_state_reg_reg[1]_0 | sub_bytes_mapping/sub_bytes_DP_mapping/temp_reg[7]_i_1_n_2                  |               16 |             40 |         2.50 |
+|  clk_IBUF_BUFG | add_key_mapping/add_key_CP_mapping/FSM_onehot_state_reg_reg[1]_0     | add_key_mapping/add_key_CP_mapping/FSM_onehot_state_reg_reg[2]_0            |               13 |             40 |         3.08 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_CP_mapping/FSM_onehot_state_reg_reg[3]_1 | mixcolumn_mapping/mixcolumn_CP_mapping/FSM_onehot_state_reg_reg[3]_0        |               36 |            128 |         3.56 |
+|  clk_IBUF_BUFG | mixcolumn_mapping/mixcolumn_CP_mapping/E[0]                          |                                                                             |               43 |            128 |         2.98 |
+|  clk_IBUF_BUFG | key_gen_mapping/key_gen_CP_mapping/E[0]                              |                                                                             |               54 |            128 |         2.37 |
+|  clk_IBUF_BUFG | key_gen_mapping/key_gen_CP_mapping/FSM_onehot_state_reg_reg[1]_0[0]  |                                                                             |               30 |            128 |         4.27 |
+|  clk_IBUF_BUFG |                                                                      |                                                                             |               72 |            320 |         4.44 |
++----------------+----------------------------------------------------------------------+-----------------------------------------------------------------------------+------------------+----------------+--------------+
+
+
