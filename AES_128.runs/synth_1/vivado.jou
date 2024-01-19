@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jan 19 12:52:14 2024
+# Process ID: 23328
+# Current directory: C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.runs/synth_1
+# Command line: vivado.exe -log round_algorithm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source round_algorithm.tcl
+# Log file: C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.runs/synth_1/round_algorithm.vds
+# Journal file: C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.runs/synth_1\vivado.jou
+# Running On: DESKTOP-050FUS6, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 8, Host memory: 8109 MB
+#-----------------------------------------------------------
+source round_algorithm.tcl -notrace
