@@ -140,7 +140,6 @@ OPTRACE "add files" START { }
   add_files -quiet {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.runs/synth_1/round_algorithm.dcp}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr1.xdc}}
-  read_xdc {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr_sa_dly.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -277,7 +276,6 @@ OPTRACE "route_design reports" START { REPORT }
   create_report "impl_1_route_report_power_0" "report_power -file round_algorithm_power_routed.rpt -pb round_algorithm_power_summary_routed.pb -rpx round_algorithm_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file round_algorithm_route_status.rpt -pb round_algorithm_route_status.pb"
   create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -report_unconstrained -file round_algorithm_timing_summary_routed.rpt -pb round_algorithm_timing_summary_routed.pb -rpx round_algorithm_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file round_algorithm_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file round_algorithm_clock_utilization_routed.rpt"
   create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file round_algorithm_bus_skew_routed.rpt -pb round_algorithm_bus_skew_routed.pb -rpx round_algorithm_bus_skew_routed.rpx"
 OPTRACE "route_design reports" END { }

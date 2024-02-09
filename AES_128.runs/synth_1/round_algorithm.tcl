@@ -119,9 +119,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr1.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr1.xdc}}]
 
-read_xdc {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr_sa_dly.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/constrs_1/new/ogr_sa_dly.xdc}}]
-
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental {C:/Users/Rascal/Desktop/AES pokusaj 2/AES_128/AES_128/AES_128.srcs/utils_1/imports/synth_1/round_algorithm.dcp}

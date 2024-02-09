@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri Jan 19 12:57:37 2024
+| Date             : Fri Feb  9 18:57:39 2024
 | Host             : DESKTOP-050FUS6 running 64-bit major release  (build 9200)
 | Command          : report_power -file round_algorithm_power_routed.rpt -pb round_algorithm_power_summary_routed.pb -rpx round_algorithm_power_routed.rpx
 | Design           : round_algorithm
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.139        |
+| Total On-Chip Power (W)  | 0.127        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.041        |
+| Dynamic (W)              | 0.029        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 2.4          |
 | Max Ambient (C)          | 124.7        |
@@ -53,17 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.008 |        3 |       --- |             --- |
-| Slice Logic    |     0.010 |     4147 |       --- |             --- |
-|   LUT as Logic |     0.009 |     1785 |     64000 |            2.79 |
-|   Register     |    <0.001 |     1761 |    128000 |            1.38 |
-|   F7/F8 Muxes  |    <0.001 |      136 |     64000 |            0.21 |
+| Slice Logic    |     0.006 |     4040 |       --- |             --- |
+|   LUT as Logic |     0.006 |     1845 |     64000 |            2.88 |
+|   Register     |    <0.001 |     1695 |    128000 |            1.32 |
+|   F7/F8 Muxes  |    <0.001 |       24 |     64000 |            0.04 |
 |   CARRY4       |    <0.001 |       28 |     16000 |            0.18 |
-|   BUFG         |    <0.001 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       81 |       --- |             --- |
-| Signals        |     0.013 |     2827 |       --- |             --- |
-| I/O            |     0.009 |      388 |       400 |           97.00 |
+|   Others       |     0.000 |       79 |       --- |             --- |
+| Signals        |     0.010 |     2928 |       --- |             --- |
+| I/O            |     0.006 |      388 |       400 |           97.00 |
 | Static Power   |     0.098 |          |           |                 |
-| Total          |     0.139 |          |           |                 |
+| Total          |     0.127 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,11 +72,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.047 |       0.032 |      0.015 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.023 |       0.001 |      0.022 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.039 |       0.025 |      0.015 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.022 |       0.000 |      0.022 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.008 |       0.004 |      0.004 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.006 |       0.002 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,14 +139,15 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| round_algorithm          |     0.041 |
+| round_algorithm          |     0.029 |
 |   add_key_mapping        |     0.001 |
-|   key_gen_mapping        |     0.007 |
-|     key_gen_DP_mapping   |     0.007 |
-|   mem_text_mapping       |     0.003 |
-|   mixcolumn_mapping      |     0.014 |
-|     mixcolumn_DP_mapping |     0.013 |
-|   sub_bytes_mapping      |     0.002 |
+|   key_gen_mapping        |     0.003 |
+|     key_gen_DP_mapping   |     0.002 |
+|   mem_key_mapping        |     0.001 |
+|   mem_text_mapping       |     0.002 |
+|   mixcolumn_mapping      |     0.011 |
+|     mixcolumn_DP_mapping |     0.010 |
+|   sub_bytes_mapping      |     0.001 |
 |     sub_bytes_DP_mapping |     0.001 |
 +--------------------------+-----------+
 
