@@ -103,18 +103,24 @@ process(sel,key_input,key_reg)
  
    case sel is
      when "000" =>
+     g_func <= (others => '0');
+      left_shifted <= (others => '0');
      key_next <= key_input;
      
      
      when "001" =>
+     g_func <= (others => '0');
+      left_shifted <= (others => '0');
      key_next<=key_reg;
      
      when "010" =>
      left_shifted <= key_reg(23 downto 0) & key_reg(31 downto 24);
+     g_func <= (others => '0');
      key_next<=key_reg;
      
      when "011" =>
      g_func <= (Sbox_s(31 downto 24) xor round_constant) & sbox_s(23 downto 0);
+      left_shifted <= (others => '0');
      key_next<=key_reg;
 
      when "100" =>
@@ -122,8 +128,12 @@ process(sel,key_input,key_reg)
       key_next(63 downto 32) <= key_reg(63 downto 32) xor key_reg(95 downto 64) xor key_reg(127 downto 96) xor g_func;
       key_next(95 downto 64) <= key_reg(95 downto 64) xor key_reg(127 downto 96) xor g_func;
       key_next(127 downto 96) <= key_reg(127 downto 96) xor g_func;
-
+      left_shifted <= (others => '0');
+      g_func <= (others => '0');
+      
      when others =>
+     g_func <= (others => '0');
+      left_shifted <= (others => '0');
      key_next<=key_reg;
       
     end case;
